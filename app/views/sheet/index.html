@@ -1,0 +1,484 @@
+<!doctype html>
+<html class="no-js">
+<head>
+  <meta charset="utf-8">
+  <title>charsheet</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+  <!-- build:css styles/vendor.css -->
+  <!-- bower:css -->
+
+  <!-- endbower -->
+  <!-- endbuild -->
+  <!-- build:css(.tmp) styles/main.css -->
+  <link rel="stylesheet" href="styles/main.css">
+  <!-- endbuild -->
+  <!-- build:js scripts/vendor/modernizr.js -->
+  <script src="../bower_components/modernizr/modernizr.js"></script>
+  <!-- endbuild -->
+
+</head>
+<body>
+
+  <div class="container">
+    <form id="localStorageTest" method="post" action="">
+      <div class="row">
+        <legend>Character Info</legend>
+        <div class="col-md-4 col-xs-4">
+
+          <div class="form-horizontal">
+
+
+            <div class="form-group">
+              <label for="name" class="col-sm-2 control-label">Name</label>
+              <div class="col-sm-10">
+                <input class="form-control" type="text" name="name" id="name" class="stored" value="" />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="" class="col-sm-2 control-label">Player</label>
+              <div class="col-sm-10">
+                <input class="form-control" type="text" name="player" id="player" class="stored" value="" />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="" class="col-sm-2 control-label">Clan</label>
+              <div class="col-sm-10">
+                <select class="form-control">
+                  <option>-- Escolha --</option>
+                  <option>Assamite</option>
+                  <option>Brujah</option>
+                  <option>Followers of Set</option>
+                  <option>Gangrel</option>
+                  <option>Giovanni</option>
+                  <option>Lasombra</option>
+                  <option>Malkavian</option>
+                  <option>Nosferatu</option>
+                  <option>Ravnos</option>
+                  <option>Toreador</option>
+                  <option>Tremere</option>
+                  <option>Tzimisce</option>
+                  <option>Ventrue</option>
+                </select>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col-md-4 col-xs-4">
+
+          <div class="form-horizontal">
+
+            <div class="form-group">
+              <label for="" class="col-sm-2 control-label">Chronicle</label>
+              <div class="col-sm-10">
+                <input class="form-control" type="text" name="chronicle" id="chronicle" class="stored" value="" />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="" class="col-sm-2 control-label">Nature</label>
+              <div class="col-sm-10">
+                <select class="form-control">
+                  <option>-- Escolha --</option>
+                  <option>Architect</option>
+                  <option>Autocrat</option>
+                  <option>Bon Vivant</option>
+                  <option>Bravo</option>
+                  <option>Capitalist</option>
+                  <option>Caregiver</option>
+                  <option>Celebrant</option>
+                  <option>Chameleon</option>
+                  <option>Child</option>
+                  <option>Competitor</option>
+                  <option>Conformist</option>
+                  <option>Conniver</option>
+                  <option>Curmudgeon</option>
+                  <option>Dabbler</option>
+                  <option>Deviant</option>
+                  <option>Director</option>
+                  <option>Enigma</option>
+                  <option>Eye of the Storm</option>
+                  <option>Fanatic</option>
+                  <option>Galant</option>
+                  <option>Guru</option>
+                  <option>Idealist</option>
+                  <option>Judge</option>
+                  <option>Loner</option>
+                </select>
+
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="" class="col-sm-2 control-label">Demeanor</label>
+              <div class="col-sm-10">
+                <input class="form-control" type="text" name="demeanor" id="demeanor" class="stored" value="" />
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-md-4 col-xs-4">
+
+          <div class="form-horizontal">
+
+
+
+            <div class="form-group">
+              <label for="" class="col-sm-2 control-label">Concept</label>
+              <div class="col-sm-10">
+                <input class="form-control" type="text" name="concept" id="concept" class="stored" value="" />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="" class="col-sm-2 control-label">Generation</label>
+              <div class="col-sm-10">
+                <select class="form-control">
+                  <option>-- Escolha --</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                  <option>6</option>
+                  <option>7</option>
+                  <option>8</option>
+                  <option>9</option>
+                  <option>10</option>
+                  <option>11</option>
+                  <option>12</option>
+                  <option>13</option>
+                  <option>14</option>
+                  <option>15</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="" class="col-sm-2 control-label">Sire</label>
+              <div class="col-sm-10">
+                <input class="form-control" type="text" name="sire" id="sire" class="stored" value="" />
+              </div>
+            </div>
+
+
+
+          </div>
+        </div>
+      </div>
+      <div class="row attributes">
+
+        <legend>Attributes</legend>
+
+        <div class="col-md-4 col-xs-4">
+
+          <div class="form-horizontal">
+
+            <fieldset>
+              <legend>Physical</legend>
+
+              <div class="form-group">
+                <label for="" class="col-sm-4 control-label">Strength</label>
+                <div class="col-sm-5">
+                  <input class="form-control" type="range" name="strengthRange" min="0" max="5" value="0" oninput="this.form.strengthInput.value=this.value" />
+                </div>
+                <div class="col-sm-3">
+                  <input class="form-control" type="number" name="strengthInput" min="0" max="5" value="0" oninput="this.form.strengthRange.value=this.value" />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="" class="col-sm-4 control-label">Dexterity</label>
+                <div class="col-sm-5">
+                  <input class="form-control" type="range" name="dexterityRange" min="0" max="5" value="0" oninput="this.form.dexterityInput.value=this.value" />
+                </div>
+                <div class="col-sm-3">
+                  <input class="form-control" type="number" name="dexterityInput" min="0" max="5" value="0" oninput="this.form.dexterityRange.value=this.value" />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="" class="col-sm-4 control-label">Stamina</label>
+                <div class="col-sm-5">
+                  <select name="staminaRange" id="staminaRange" class="form-control" oninput="this.form.staminaInput.value=this.value">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                  </select>
+                </div>
+              </div>
+
+            </fieldset>
+
+          </div>
+        </div>
+
+        <div class="col-md-4 col-xs-4">
+          <div class="form-horizontal">
+
+            <fieldset>
+              <legend>Social</legend>
+
+              <div class="form-group">
+                <label for="" class="col-sm-4 control-label">Charisma</label>
+                <div class="col-sm-5">
+                  <input class="form-control" type="range" name="charismaRange" min="0" max="5" value="0" oninput="this.form.charismaInput.value=this.value" />
+                </div>
+                <div class="col-sm-3">
+                  <input class="form-control" type="number" name="charismaInput" min="0" max="5" value="0" oninput="this.form.charismaRange.value=this.value" />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="" class="col-sm-4 control-label">Manipulation</label>
+                <div class="col-sm-5">
+                  <input class="form-control" type="range" name="manipulationRange" min="0" max="5" value="0" oninput="this.form.manipulationInput.value=this.value" />
+                </div>
+                <div class="col-sm-3">
+                  <input class="form-control" type="number" name="manipulationInput" min="0" max="5" value="0" oninput="this.form.manipulationRange.value=this.value" />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="" class="col-sm-4 control-label">Appearance</label>
+                <div class="col-sm-5">
+                  <input class="form-control" type="range" name="appearanceRange" min="0" max="5" value="0" oninput="this.form.appearanceInput.value=this.value" />
+                </div>
+                <div class="col-sm-3">
+                  <input class="form-control" type="number" name="appearanceInput" min="0" max="5" value="0" oninput="this.form.appearanceRange.value=this.value" />
+                </div>
+              </div>
+
+            </fieldset>
+
+          </div>
+        </div>
+        <div class="col-md-4 col-xs-4">
+          <div class="form-horizontal">
+
+            <fieldset>
+              <legend>Mental</legend>
+
+              <div class="form-group">
+                <label for="" class="col-sm-4 control-label">Perception</label>
+                <div class="col-sm-5">
+                  <input class="form-control" type="range" name="perceptionRange" min="0" max="5" value="0" oninput="this.form.perceptionInput.value=this.value" />
+                </div>
+                <div class="col-sm-3">
+                  <input class="form-control" type="number" name="perceptionInput" min="0" max="5" value="0" oninput="this.form.perceptionRange.value=this.value" />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="" class="col-sm-4 control-label">Intelligence</label>
+                <div class="col-sm-5">
+                  <input class="form-control" type="range" name="intelligenceRange" min="0" max="5" value="0" oninput="this.form.intelligenceInput.value=this.value" />
+                </div>
+                <div class="col-sm-3">
+                  <input class="form-control" type="number" name="intelligenceInput" min="0" max="5" value="0" oninput="this.form.intelligenceRange.value=this.value" />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="" class="col-sm-4 control-label">Wits</label>
+                <div class="col-sm-5">
+                  <input class="form-control" type="range" name="witsRange" min="0" max="5" value="0" oninput="this.form.witsInput.value=this.value" />
+                </div>
+                <div class="col-sm-3">
+                  <input class="form-control" type="number" name="witsInput" min="0" max="5" value="0" oninput="this.form.witsRange.value=this.value" />
+                </div>
+              </div>
+
+            </fieldset>
+
+          </div>
+        </div>
+
+      </div>
+
+      <div class="row" id="abilities">
+        <legend>Abilities</legend>
+        <div class="col-md-4 col-xs-4">
+          <div class="form-horizontal">
+
+            <fieldset>
+            <legend>Talents</legend>
+
+              <div class="form-group">
+                <label for="alertness" class="col-sm-8 control-label">Alertness</label>
+                <div class="col-sm-4">
+                  <select name="alertness" id="alertness" class="form-control">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="athletics" class="col-sm-8 control-label">Athletics</label>
+                <div class="col-sm-4">
+                  <select name="athletics" id="athletics" class="form-control">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="awareness" class="col-sm-8 control-label">Aweareness</label>
+                <div class="col-sm-4">
+                  <select name="awareness" id="awareness" class="form-control">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="brawl" class="col-sm-8 control-label">Brawl</label>
+                <div class="col-sm-4">
+                  <select name="brawl" id="brawl" class="form-control">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="empathy" class="col-sm-8 control-label">Empathy</label>
+                <div class="col-sm-4">
+                  <select name="empathy" id="empathy" class="form-control">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                  </select>
+                </div>
+              </div>
+
+            </fieldset>
+          </div>
+        </div>
+        <div class="col-md-4 col-xs-4">
+          <div class="form-horizontal">
+
+            <fieldset>
+              <legend>Skills</legend>
+
+              <div class="form-group">
+                <label for="animalKen" class="col-sm-8 control-label">Animal Ken</label>
+                <div class="col-sm-4">
+                  <select name="animalKen" id="animalKen" class="form-control">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                  </select>
+                </div>
+              </div>
+
+            </fieldset>
+          </div>
+        </div>
+        <div class="col-md-4 col-xs-4">
+          <div class="form-horizontal">
+
+            <fieldset>
+              <legend>Knowledges</legend>
+
+              <div class="form-group">
+                <label for="academics" class="col-sm-8 control-label">Academics</label>
+                <div class="col-sm-4">
+                  <select name="academics" id="academics" class="form-control">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                  </select>
+                </div>
+              </div>
+
+            </fieldset>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="row">
+        <div class="col-md-9">
+          <legend>Finish</legend>
+          <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+              <button type="submit" class="btn btn-default">Submit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+</form>
+</div>
+
+<!-- build:js scripts/vendor.js -->
+<!-- bower:js -->
+<script src="../bower_components/jquery/dist/jquery.js"></script>
+<!-- endbower -->
+<!-- endbuild -->
+
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+<script>
+  (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+    function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+  e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+  e.src='//www.google-analytics.com/analytics.js';
+  r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+  ga('create','UA-XXXXX-X');ga('send','pageview');
+</script>
+
+<!-- build:js scripts/plugins.js -->
+<script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/affix.js"></script>
+<script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/alert.js"></script>
+<script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/dropdown.js"></script>
+<script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/tooltip.js"></script>
+<script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/modal.js"></script>
+<script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/transition.js"></script>
+<script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/button.js"></script>
+<script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/popover.js"></script>
+<script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/carousel.js"></script>
+<script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/scrollspy.js"></script>
+<script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/collapse.js"></script>
+<script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/tab.js"></script>
+<!-- endbuild -->
+
+<!-- build:js({app,.tmp}) scripts/main.js -->
+<script src="scripts/main.js"></script>
+<!-- endbuild -->
+</body>
+</html>

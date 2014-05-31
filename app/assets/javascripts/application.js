@@ -15,3 +15,28 @@
 //= require turbolinks
 //= require bootstrap
 //= require_tree .
+
+(function (window) {
+  'use strict';
+
+  var doSheet = {
+    init: function() {
+      if (localStorage['name']) {
+        $('#name').val(localStorage["name"]);
+      }
+      if (localStorage['player']) {
+        $('#player').val(localStorage["player"]);
+      }
+    }() // execute this on page load!
+  };
+
+  window.doSheet = doSheet;
+}(this));
+
+$('.form-control').keyup(function () {
+  localStorage[$(this).attr('name')] = $(this).val();
+});
+
+$('#localStorageTest').submit(function() {
+  localStorage.clear();
+});
