@@ -1,0 +1,38 @@
+<h1>Listing powers</h1>
+
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th></th>
+      <th>Name</th>
+      <th>Group</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @powers.each do |power| %>
+      <tr>
+        <td><%= power.id %></td>
+        <td><%= power.name %></td>
+        <td>
+          <%= power.groups.map{|p| p.name}.to_sentence %>
+        </td>
+        <td><%= link_to 'Show', power, :id => 'show', :class => 'btn btn-default' %></td>
+        <td><%= link_to 'Edit', edit_power_path(power), :class => 'btn btn-default' %></td>
+        <td><%= link_to 'Destroy', power, method: :delete, data: { confirm: 'Are you sure?' }, :class => 'btn btn-default' %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Power', new_power_path, :class => 'btn btn-default' %>
+
+<script>
+  $('table').on('click', 'tr', function() {
+    var path = $(this).find('#show').attr('href');
+    Turbolinks.visit(path);
+  });
+</script>

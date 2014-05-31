@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @level.name %>
+</p>
+
+<p>
+  <strong>Level:</strong>
+  <%= @level.level %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @level.description %>
+</p>
+
+<p>
+  <strong>Power:</strong>
+  <%= @level.power.name %>
+</p>
+
+<%= link_to 'Edit', edit_level_path(@level), :class => 'btn btn-default' %> |
+<%= link_to 'Back', levels_path, :class => 'btn btn-default' %>

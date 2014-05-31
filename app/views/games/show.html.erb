@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @game.name %>
+</p>
+
+<p>
+  <strong>System:</strong>
+  <%= @game.system.name %>
+</p>
+
+<%= link_to 'Edit', edit_game_path(@game), :class => 'btn btn-default' %> |
+<%= link_to 'Back', games_path, :class => 'btn btn-default' %>
