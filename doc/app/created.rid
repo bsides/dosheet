@@ -1,0 +1,19 @@
+Sat, 31 May 2014 03:13:07 -0300
+README.rdoc	Fri, 30 May 2014 21:42:25 -0300
+app/controllers/application_controller.rb	Fri, 30 May 2014 22:44:27 -0300
+app/controllers/games_controller.rb	Sat, 31 May 2014 02:37:30 -0300
+app/controllers/groups_controller.rb	Sat, 31 May 2014 02:18:36 -0300
+app/controllers/levels_controller.rb	Fri, 30 May 2014 21:47:41 -0300
+app/controllers/powers_controller.rb	Sat, 31 May 2014 02:20:05 -0300
+app/controllers/systems_controller.rb	Fri, 30 May 2014 21:46:16 -0300
+app/helpers/application_helper.rb	Fri, 30 May 2014 21:42:25 -0300
+app/helpers/games_helper.rb	Fri, 30 May 2014 21:46:26 -0300
+app/helpers/groups_helper.rb	Fri, 30 May 2014 21:46:41 -0300
+app/helpers/levels_helper.rb	Fri, 30 May 2014 21:47:41 -0300
+app/helpers/powers_helper.rb	Fri, 30 May 2014 21:47:22 -0300
+app/helpers/systems_helper.rb	Fri, 30 May 2014 21:46:16 -0300
+app/models/game.rb	Sat, 31 May 2014 02:39:11 -0300
+app/models/group.rb	Sat, 31 May 2014 02:26:02 -0300
+app/models/level.rb	Fri, 30 May 2014 21:47:41 -0300
+app/models/power.rb	Sat, 31 May 2014 01:58:18 -0300
+app/models/system.rb	Sat, 31 May 2014 02:24:44 -0300
