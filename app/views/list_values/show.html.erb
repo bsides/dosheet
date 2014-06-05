@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Text:</strong>
+  <%= @list_value.text %>
+</p>
+
+<p>
+  <strong>List:</strong>
+  <%= @list_value.list.name %>
+</p>
+
+<%= link_to 'Edit', edit_list_value_path(@list_value), :class => 'btn btn-default' %> |
+<%= link_to 'Back', list_values_path, :class => 'btn btn-default' %>

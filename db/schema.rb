@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140531042342) do
+ActiveRecord::Schema.define(version: 20140531184333) do
 
   create_table "games", force: true do |t|
     t.string   "name"
@@ -46,6 +46,29 @@ ActiveRecord::Schema.define(version: 20140531042342) do
   end
 
   add_index "levels", ["power_id"], name: "index_levels_on_power_id"
+
+  create_table "list_associations", id: false, force: true do |t|
+    t.integer "first_list_id"
+    t.integer "second_list_id"
+  end
+
+  create_table "list_values", force: true do |t|
+    t.string   "text"
+    t.integer  "list_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "list_values", ["list_id"], name: "index_list_values_on_list_id"
+
+  create_table "lists", force: true do |t|
+    t.string   "name"
+    t.integer  "system_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "lists", ["system_id"], name: "index_lists_on_system_id"
 
   create_table "powers", force: true do |t|
     t.string   "name"

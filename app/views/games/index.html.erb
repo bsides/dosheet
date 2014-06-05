@@ -25,9 +25,3 @@
 <br>
 
 <%= link_to 'New Game', new_game_path, :class => 'btn btn-default' %>
-<script>
-  $('table').on('click', 'tr', function() {
-    var path = $(this).find('#show').attr('href');
-    Turbolinks.visit(path);
-  });
-</script>

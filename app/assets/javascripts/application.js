@@ -40,3 +40,12 @@ $('.form-control').keyup(function () {
 $('#localStorageTest').submit(function() {
   localStorage.clear();
 });
+
+$(function () {
+  'use strict';
+
+  $('table').on('click', 'tr', function() {
+    var path = $(this).find('#show').attr('href');
+    Turbolinks.visit(path);
+  });
+})

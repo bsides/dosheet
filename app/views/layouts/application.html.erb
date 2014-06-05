@@ -1,7 +1,8 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html class="no-js">
 <head>
   <title>Dosheet</title>
+  <meta name="viewport" content="width=device-width">
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
@@ -31,6 +32,8 @@
           <li><%= link_to t('groups'), groups_path %></li>
           <li><%= link_to t('powers'), powers_path %></li>
           <li><%= link_to t('levels'), levels_path %></li>
+          <li><%= link_to t('lists'), lists_path %></li>
+          <li><%= link_to t('list_values'), list_values_path %></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
           <li class="dropdown">

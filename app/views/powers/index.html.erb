@@ -29,10 +29,3 @@
 <br>
 
 <%= link_to 'New Power', new_power_path, :class => 'btn btn-default' %>
-
-<script>
-  $('table').on('click', 'tr', function() {
-    var path = $(this).find('#show').attr('href');
-    Turbolinks.visit(path);
-  });
-</script>

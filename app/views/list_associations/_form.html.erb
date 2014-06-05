@@ -1,0 +1,12 @@
+<%= simple_form_for(@list_association) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :first_list_id %>
+    <%= f.input :second_list_id %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

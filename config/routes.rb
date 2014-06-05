@@ -1,11 +1,16 @@
 Rails.application.routes.draw do
 
+  resources :list_associations
+
 scope "(:locale)", locale: /pt-BR|en-US/ do
+  resources :list_values
+  resources :lists
   resources :levels
   resources :powers
   resources :groups
   resources :games
   resources :systems
+  resources :sheets
 end
 
 root 'systems#index'
